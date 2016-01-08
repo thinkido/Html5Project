@@ -12,7 +12,9 @@ $(function(){
 		var postUrl = "http://gaohui11202.vicp.cc/ForAndroid/Login" ;
 		var proxyUrl = "http://www.g6game.com/h5game/interfaces/proxy.php"  ;
 		// var proxyData = {url: postUrl , value: encodeURI( JSON.stringify(sendData) ) } ; 
-		var proxyData = {url: postUrl , value: encodeURI( "UserName=" + "ceshi" + "&UserPwd=" + "123456" ) } ; 
+		// var proxyData = {url: postUrl , value: encodeURI( "UserName=" + "ceshi" + "&UserPwd=" + "123456" ) } ; 
+		var dataStr = objToStr(sendData) ;
+		var proxyData = {url: postUrl , value: encodeURI( dataStr ) } ; 
 		$.ajax({
 	        type:"POST",
 	        url: proxyUrl ,
@@ -22,7 +24,8 @@ $(function(){
 	        success:function(data){
 	       		// $("#msg").html(decodeURI(data));     
 	       		console.info("返回数据:"+data);
-	       		var data = JSON.parse(data); 
+	       		data = JSON.parse(data); 
+	       		window.location.href = "price.html" ;
 	       		if( data.success ){	//成功
 	       			console.info("成功! name:" + data.name );
 	       		}
@@ -69,5 +72,16 @@ $(function(){
 
 })
 
-
+function objToStr( data ){
+	var str = "" ;
+	for (var key in data) {
+		if( str.length > 0 ){
+			str += "&"+ key + "=" + data[key] ;
+		}else{
+			str += key + "=" + data[key] ;
+		}
+		// "UserName=" + "ceshi" + "&UserPwd=" + "123456"
+	};
+	return str ;
+}
 
