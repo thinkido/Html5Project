@@ -51,7 +51,21 @@ $(function(){
 		$('#info').removeClass('left').addClass('normal');
 	});
 
-
+	$('#priceBtn').click(function(){
+		window.location.href = "price.html" ;
+		console.info("价格!");
+	});
+	$('#nativeBtn').click(function(){
+		window.location.href = "native.html" ;
+		console.info("灾害!");
+		
+	});
+	$('#manageBtn').click(function(){
+		window.location.href = "manage.html" ;
+		console.info("管理!");
+		
+	});
+	
 
 })
 

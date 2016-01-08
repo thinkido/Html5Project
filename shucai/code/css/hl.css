@@ -48,8 +48,8 @@ body,button, input, select, textarea,h1 ,h2, h3, h4, h5, h6 { font-family: Micro
 
 
 
-.footer{ text-align: center; background: #e5e5e5; padding: 5px 0;}
-.footer button{ width:23%; }
+.footer{ text-align: center; background: #e5e5e5; padding: 5px 0; position: absolute; bottom: 0px;  width: 100%;}
+.footer button{ width:30%; }
 
 #first{ background:#5bc0de; color:white; text-align: center;}
 
