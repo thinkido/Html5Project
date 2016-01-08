@@ -1,0 +1,113 @@
+body,button, input, select, textarea,h1 ,h2, h3, h4, h5, h6 { font-family: Microsoft YaHei,'宋体' , Tahoma, Helvetica, Arial, "\5b8b\4f53", sans-serif;}
+#head div{ float:left; width: 25%;}
+
+.title{ margin:10px 0; text-align: center; font-weight: bold; }
+
+#head #boss{ width:50%; line-height: 200%;}
+#boss img{float:right; width:22%; margin-right: 3%;}
+#boss span{float:right;  font-family: 微软雅黑; color: black; margin-right: 3%;}
+.table{font-family: 微软雅黑;}
+
+
+#info{width:200%;}
+#info.normal{
+
+  -webkit-animation: normal 1s  ease forwards;
+}
+@-webkit-keyframes normal{
+  from{
+    margin-left:100%;
+  }
+  to{
+    margin-left:0;
+  }
+
+}
+#info.left{
+-webkit-animation: left 1s  ease forwards;
+}
+
+@-webkit-keyframes left{
+	to{
+		margin-left:-100%;
+	}
+
+}
+
+
+#show.cx{
+  width:100%;
+  margin-top: 0;
+}
+
+#show{ margin-top: 10px;float:left; width:50%;}
+#callout-help-text-accessibility{float:left;width:50%;}
+
+
+#l_show{ margin-top: 10px;}
+
+
+
+.footer{ text-align: center; background: #e5e5e5; padding: 5px 0;}
+.footer button{ width:23%; }
+
+#first{ background:#5bc0de; color:white; text-align: center;}
+
+
+
+
+
+.bs-callout {
+  padding: 20px;
+  margin-top: 10px;
+  border: 1px solid #eee;
+  border-left-width: 5px;
+  border-radius: 3px;
+}
+
+.bs-callout h4 {
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+.bs-callout h5 {
+  margin-top: 0;
+  margin-bottom: 5px;
+  color: #5cb85c;
+}
+
+.bs-callout-info {
+  border-left-color: #5bc0de;
+}
+.bs-callout-info h4 {
+  color: #5bc0de;
+}
+
+.form-group{margin-bottom: 0;}
+.form-ext{display: none; }
+
+#l_show{ border:none;}
+#l_show td{border:none;}
+#l_show .submit{ text-align: center;}
+
+#head.first{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/*登录页*/
+
+.login-box{
+  margin-top: 35%;
+}
+
+.login-title{
+  margin-bottom: 20px;
+}
+
+.form-group{ overflow: hidden; margin-bottom: 16px;}
+
+.hlbtn button{ float:left; margin-right: 10%;}
+
+
+.register-box{ margin-top: 25%;}

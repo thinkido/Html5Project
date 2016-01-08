@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    <title>蔬菜</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+   <link href="css/hl.css" rel="stylesheet">
+    <link href="css/bootstrap-datetimepicker.css" rel="stylesheet" media="screen">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+	
+ <div class='page-header title' >录入</div> 	
+<!--  <div id='head' class='clearfix'>
+  <div><select class="form-control"><option>2015</option></select></div>
+  <div><select class="form-control"><option>成都</option></select></div>
+  <div id='boss'><img src="images/1.jpg"><span class='text-muted'>王老板</span></div>
+</div> -->
+<table class="table" id='l_show'>
+<tr><td colspan=2><div class="input-group">
+  <span class="input-group-addon" id="basic-addon1">蔬菜</span>
+  <input type="text" class="form-control" placeholder="绿色蔬菜" aria-describedby="basic-addon1">
+</div></td></tr>
+<tr><td colspan=2><div class="input-group">
+  <span class="input-group-addon" id="basic-addon1">蔬菜品名</span>
+  <select class="form-control" aria-describedby="basic-addon1">
+  <option>黄瓜</option>
+  </select>
+</div></td></tr>  
+
+<tr><td colspan=2><div class="input-group">
+  <span class="input-group-addon" id="basic-addon1">省</span>
+  <input type="text" class="form-control" placeholder="河南" aria-describedby="basic-addon1">
+</div></td></tr>  
+<tr><td colspan=2><div class="input-group">
+  <span class="input-group-addon" id="basic-addon1">市</span>
+  <input type="text" class="form-control" placeholder="郑州" aria-describedby="basic-addon1">
+</div></td></tr>  
+<tr><td colspan=2><div class="input-group">
+  <span class="input-group-addon" id="basic-addon1">批发市场</span>
+  <input type="text" class="form-control" placeholder="郑州" aria-describedby="basic-addon1">
+</div></td></tr>  
+<tr><td colspan=2><div class="form-group">
+        
+                <div class="input-group date form_date col-md-5" data-date="" data-date-format="yyyy-mm-dd" data-link-field="dtp_input2" data-link-format="yyyy-mm-dd">
+                    <input class="form-control" size="16" type="text" value="" placeholder='时间' readonly>
+                    <span class="input-group-addon"><span class="glyphicon glyphicon-remove"></span></span>
+          <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+                </div>
+        <input type="hidden" id="dtp_input2" value="" />
+            </div></td></tr>
+ <tr><td colspan=2><div class="input-group">
+  <span class="input-group-addon" id="basic-addon1">价格</span>
+  <input type="text" class="form-control" placeholder="10.00" aria-describedby="basic-addon1">
+</div></td></tr>  
+ <tr><td colspan=2><div class="input-group">
+  <span class="input-group-addon" id="basic-addon1">销量</span>
+  <input type="text" class="form-control" placeholder="1000" aria-describedby="basic-addon1">
+</div></td></tr>    
+ <tr class='submit'><td><button type="button" class="btn btn-success">确定</button></td><td><button type="button" class="btn btn-warning">取消</button></td></tr>     
+</table>
+
+<div class='footer'>
+	<button type="button" class="btn btn-info">走势</button>
+	<button type="button" class="btn btn-info">排行</button>
+<button type="button" class="btn btn-info">灾害</button>
+<button type="button" class="btn btn-success">录入</button>
+</div>	
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/hl.js"></script>
+    <script type="text/javascript" src="js/bootstrap-datetimepicker.js" charset="UTF-8"></script>
+    <script type="text/javascript">
+    $('.form_datetime').datetimepicker({
+        //language:  'fr',
+        weekStart: 1,
+        todayBtn:  1,
+    autoclose: 1,
+    todayHighlight: 1,
+    startView: 2,
+    forceParse: 0,
+        showMeridian: 1
+    });
+  $('.form_date').datetimepicker({
+        language:  'fr',
+        weekStart: 1,
+        todayBtn:  1,
+    autoclose: 1,
+    todayHighlight: 1,
+    startView: 2,
+    minView: 2,
+    forceParse: 0
+    });
+  $('.form_time').datetimepicker({
+        language:  'fr',
+        weekStart: 1,
+        todayBtn:  1,
+    autoclose: 1,
+    todayHighlight: 1,
+    startView: 1,
+    minView: 0,
+    maxView: 1,
+    forceParse: 0
+    });
+$('#datetimepicker').datetimepicker({
+    format: 'yyyy-mm-dd'
+});
+
+</script>
+  </body>
+</html>
