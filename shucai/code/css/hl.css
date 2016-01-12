@@ -1,7 +1,7 @@
 body,button, input, select, textarea,h1 ,h2, h3, h4, h5, h6 { font-family: Microsoft YaHei,'宋体' , Tahoma, Helvetica, Arial, "\5b8b\4f53", sans-serif;}
 #head div{ float:left; width: 25%;}
 
-.title{ margin:10px 0; text-align: center; font-weight: bold; }
+.title{ margin:10px 0; text-align: center; font-weight: bold;font-size: 20px; }
 
 #head #boss{ width:50%; line-height: 200%;}
 #boss img{float:right; width:22%; margin-right: 3%;}
